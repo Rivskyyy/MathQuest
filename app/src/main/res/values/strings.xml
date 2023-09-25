@@ -6,4 +6,9 @@
     <string name="welcome_to_mathquest">Welcome to MathQuest</string>
     <string name="next_btn">next</string>
     <string name="welcome_image">welcome_image</string>
+    <string name="choose_your_level">Choose your level:</string>
+    <string name="easy_button_text">easy</string>
+    <string name="testing_button_text">testing</string>
+    <string name="medium_text_button">medium</string>
+    <string name="hard_text_button">hard</string>
 </resources>

@@ -12,4 +12,6 @@
     <string name="medium_text_button">medium</string>
     <string name="hard_text_button">hard</string>
     <string name="correct_answers_s_min_s">Correct answers %s (min: %s</string>
+    <string name="try_again">try again</string>
+    <string name="your_score_s">Your score: %s</string>
 </resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.ChooseLevelFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:text="@string/choose_your_level"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/testing_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/testing_button_text"
+        android:textAllCaps="true"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/easy_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/easy_button_text"
+        android:textAllCaps="true"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/medium_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/medium_text_button"
+        android:textAllCaps="true"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/hard_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/hard_text_button"
+        android:textAllCaps="true"
+        android:textSize="24sp" />
+
+</LinearLayout>

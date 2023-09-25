@@ -11,4 +11,5 @@
     <string name="testing_button_text">testing</string>
     <string name="medium_text_button">medium</string>
     <string name="hard_text_button">hard</string>
+    <string name="correct_answers_s_min_s">Correct answers %s (min: %s</string>
 </resources>

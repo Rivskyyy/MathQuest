@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MathQuest</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="how_to_play">How to play : \nThe sum of the two lower figures must be equal to the number in the upper figure</string>
+    <string name="welcome_to_mathquest">Welcome to MathQuest</string>
+    <string name="next_btn">next</string>
+    <string name="welcome_image">welcome_image</string>
 </resources>

@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.rivskyinc.mathquest"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.rivskyinc.mathquest"

@@ -9,9 +9,9 @@ import com.rivskyinc.mathquest.databinding.FragmentGameBinding
 import com.rivskyinc.mathquest.domain.entity.Level
 
 class GameFragment : Fragment() {
-    private lateinit var level : Level
-    private var _binding : FragmentGameBinding? = null
-    private val binding : FragmentGameBinding
+    private lateinit var level: Level
+    private var _binding: FragmentGameBinding? = null
+    private val binding: FragmentGameBinding
         get() = _binding ?: throw RuntimeException("FragmentGameBinding == null ")
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,20 +27,21 @@ class GameFragment : Fragment() {
         return binding.root
     }
 
-    private fun parseArgs(){
+    private fun parseArgs() {
         level = requireArguments().getSerializable(KEY_LEVEL) as Level
     }
-    companion object{
+
+    companion object {
         private const val KEY_LEVEL = "level"
-        fun newInstance(level : Level) : GameFragment{
+        fun newInstance(level: Level): GameFragment {
             return GameFragment().apply {
                 arguments = Bundle().apply {
                     putSerializable(KEY_LEVEL, level)
                 }
-
             }
         }
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

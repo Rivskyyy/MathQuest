@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.rivskyinc.mathquest.databinding.FragmentGameFinishBinding
 import com.rivskyinc.mathquest.domain.entity.GameResult
 
@@ -24,6 +26,20 @@ class GameFinishFragment : Fragment() {
         _binding = FragmentGameFinishBinding.inflate(inflater, container, false )
         return binding.root
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true){
+            override fun handleOnBackPressed() {
+                retryGame()
+            }
+
+        })
+    }
+    private fun retryGame(){
+        requireActivity().supportFragmentManager.popBackStack(GameFragment.NAME, FragmentManager.POP_BACK_STACK_INCLUSIVE)
+    }
+
     private fun parseArgs(){
         gameResult = requireArguments().getSerializable(KEY_GAME_RESULT) as GameResult
     }

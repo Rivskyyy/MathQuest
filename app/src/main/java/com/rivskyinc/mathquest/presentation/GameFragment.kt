@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.rivskyinc.mathquest.R
 import com.rivskyinc.mathquest.databinding.FragmentGameBinding
+import com.rivskyinc.mathquest.domain.entity.GameResult
 import com.rivskyinc.mathquest.domain.entity.Level
 
 class GameFragment : Fragment() {
@@ -25,6 +27,13 @@ class GameFragment : Fragment() {
     ): View {
         _binding = FragmentGameBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    private fun launchGameFinishFragment(gameResult: GameResult) {
+        requireActivity().supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.main_container, GameFinishFragment.newInstance(gameResult))
+            .addToBackStack(null).commit()
     }
 
     private fun parseArgs() {

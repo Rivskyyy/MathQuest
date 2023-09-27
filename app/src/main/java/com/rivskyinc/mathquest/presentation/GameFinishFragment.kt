@@ -35,6 +35,10 @@ class GameFinishFragment : Fragment() {
             }
 
         })
+
+        binding.btnRetry.setOnClickListener {
+            retryGame()
+        }
     }
     private fun retryGame(){
         requireActivity().supportFragmentManager.popBackStack(GameFragment.NAME, FragmentManager.POP_BACK_STACK_INCLUSIVE)
